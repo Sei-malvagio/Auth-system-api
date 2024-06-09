@@ -2,11 +2,11 @@
   "name": "login_api",
   "version": "1.0.0",
   "description": "A auth API",
-  "main": "server.js",
+  "main": "server.cjs",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.mjs"
+    "start": "node server.cjs"
   },
   "keywords": [],
   "author": "Jafar Sodiq",
