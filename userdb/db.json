@@ -1,1 +1,13 @@
-
+{
+  "users": [
+    {
+      "id": 248,
+      "nama_lengkap": "Kez",
+      "email": "kez@gmail.com",
+      "password": "kez",
+      "pekerjaan": "Web Developer",
+      "gender": "Laki-laki",
+      "path": "main.html"
+    }
+  ]
+}
