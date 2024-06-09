@@ -38,6 +38,7 @@ const writeDB = (data) => {
    fs.writeFileSync(dimanaDB, JSON.stringify(data, null, 2, 'utf8'))
 }
 
+//route untuk signup
 app.post('/signup', async(req, res) => {
    const { nama_lengkap, email, password, pekerjaan, gender, path } = req.body
    const db = readDB()
