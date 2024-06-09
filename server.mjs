@@ -38,7 +38,7 @@ const writeDB = (data) => {
    fs.writeFileSync(dimanaDB, JSON.stringify(data, null, 2, 'utf8'))
 }
 
-app.post('/api/signup', async(req, res) => {
+app.post('/signup', async(req, res) => {
    const { nama_lengkap, email, password, pekerjaan, gender, path } = req.body
    const db = readDB()
 
@@ -71,7 +71,7 @@ app.post('/api/signup', async(req, res) => {
    return res.status(201).json({ message: 'Akun berhasil dibuat' })
 })
 
-app.post('/api/login', async(req, res) => {
+app.post('/login', async(req, res) => {
    const { nama_lengkap, email, password, pekerjaan, gender } = req.body
    const db = readDB()
 
@@ -105,7 +105,7 @@ const autentikasiToken = (req, res, next) => {
    })
 }
 
-app.get('/api/protected', autentikasiToken, (req, res) => {
+app.get('/protected', autentikasiToken, (req, res) => {
   res.json({ message: 'This is a protected route', user: req.user });
 });
 
@@ -115,7 +115,7 @@ app.get('/api', (req, res) => {
     console.log(`[✓] ${clr.bg.green}GET${clr.colors.end} \'/\', status: ${clr.colors.green}Good${clr.colors.end}`)
 })
 
-app.get('/api/profile', autentikasiToken, (req, res) => {
+app.get('/profile', autentikasiToken, (req, res) => {
     const users = req.user
     const db = readDB()
 
