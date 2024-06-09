@@ -134,3 +134,5 @@ const randomId = () => {
 app.listen(PORT, () => {
   console.log(`${clr.bold}${clr.bg.magenta}[√] Server up, listen on port ${PORT}${clr.colors.end}`)
 }) 
+
+export default app
