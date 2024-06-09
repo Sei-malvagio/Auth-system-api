@@ -5,6 +5,7 @@
   "main": "server.mjs",
   "type": "module",
   "scripts": {
+    "start": "node server.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
