@@ -9,7 +9,7 @@ import * as clr from './colors/colors.mjs'
 
 const app = express()
 const PORT = 3000
-const SECRET_KEY = 'irsanged123@'
+const SECRET_KEY = 'jafars1244@'
 
 //cross-origin resource sharing
 app.use(cors())
