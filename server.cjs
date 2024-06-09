@@ -33,7 +33,6 @@ const readDB = () => {
   return JSON.parse(readData)
 }
 
-//fungsi kebalikan dari read yaitu write
 const writeDB = (data) => {
    fs.writeFileSync(dimanaDB, JSON.stringify(data, null, 2, 'utf8'))
 }
